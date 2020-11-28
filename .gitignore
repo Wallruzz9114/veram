@@ -19,22 +19,78 @@ backend/API/dump.rdb
 backend/.DS_Store
 backend/Makefile
 
-frontend/node_modules/**/*
-frontend/.expo/*
-frontend/npm-debug.*
-frontend/*.jks
-frontend/*.p8
-frontend/*.p12
-frontend/*.key
-frontend/*.mobileprovision
-frontend/*.orig.*
-frontend/web-build/
+frontend/.idea
+frontend/**/node_modules/*
+frontend/**/.firebaserc
 
-# macOS
-frontend/.DS_Store
+### Firebase Patch ###
+frontend/.runtimeconfig.json
+frontend/.firebase/
 
-frontend/.eslintignore
-frontend/.eslintrc
-frontend/.prettierrc
+### Flutter ###
+# Flutter/Dart/Pub related
+frontend/**/doc/api/
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.fvm/
+frontend/.packages
+frontend/.pub-cache/
+frontend/.pub/
+frontend/build/
+frontend/lib/generated_plugin_registrant.dart
 
-frontend/node_modules/
+# Android related
+frontend/**/android/**/gradle-wrapper.jar
+frontend/**/android/.gradle
+frontend/**/android/captures/
+frontend/**/android/gradlew
+frontend/**/android/gradlew.bat
+frontend/**/android/key.properties
+frontend/**/android/local.properties
+frontend/**/android/**/GeneratedPluginRegistrant.java
+
+# iOS/XCode related
+frontend/**/ios/**/*.mode1v3
+frontend/**/ios/**/*.mode2v3
+frontend/**/ios/**/*.moved-aside
+frontend/**/ios/**/*.pbxuser
+frontend/**/ios/**/*.perspectivev3
+frontend/**/ios/**/*sync/
+frontend/**/ios/**/.sconsign.dblite
+frontend/**/ios/**/.tags*
+frontend/**/ios/**/.vagrant/
+frontend/**/ios/**/DerivedData/
+frontend/**/ios/**/Icon?
+frontend/**/ios/**/Pods/
+frontend/**/ios/**/.symlinks/
+frontend/**/ios/**/profile
+frontend/**/ios/**/xcuserdata
+frontend/**/ios/.generated/
+frontend/**/ios/Flutter/.last_build_id
+frontend/**/ios/Flutter/App.framework
+frontend/**/ios/Flutter/Flutter.framework
+frontend/**/ios/Flutter/Flutter.podspec
+frontend/**/ios/Flutter/Generated.xcconfig
+frontend/**/ios/Flutter/app.flx
+frontend/**/ios/Flutter/app.zip
+frontend/**/ios/Flutter/flutter_assets/
+frontend/**/ios/Flutter/flutter_export_environment.sh
+frontend/**/ios/ServiceDefinitions.json
+frontend/**/ios/Runner/GeneratedPluginRegistrant.*
+
+# Exceptions to above rules.
+frontend/!**/ios/**/default.mode1v3
+frontend/!**/ios/**/default.mode2v3
+frontend/!**/ios/**/default.pbxuser
+frontend/!**/ios/**/default.perspectivev3
+frontend/!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+### vscode ###
+frontend/.vscode/*
+frontend/!.vscode/settings.json
+frontend/!.vscode/tasks.json
+frontend/!.vscode/launch.json
+frontend/!.vscode/extensions.json
+frontend/*.code-workspace
+frontend/lib/src/utils/config
